@@ -44,7 +44,7 @@ body {
 	height: 40px;
 	box-shadow: 0px 0px 5px 2px #000;
 }
-[class*=".navbar-"] {
+[class*="navbar-"] {
 	float: left;
 	height: 100%;
 	margin-right: 4px;
@@ -54,7 +54,7 @@ body {
 	line-height: 40px;
 }
 .navbar-logo {
-	
+  padding: 3px;
 }
 .navbar-item:hover {
 	background: #444;
@@ -62,5 +62,7 @@ body {
 	color: #888;
 }
 /* End navbar styling */
-
+.righty {
+  float: right;
+}
 /* End global styling */
