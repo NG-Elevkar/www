@@ -61,6 +61,9 @@ body {
 	cursor: pointer;
 	color: #888;
 }
+.navbar-item:first-child {
+  margin-left: 10px;
+}
 /* End navbar styling */
 .righty {
   float: right;
