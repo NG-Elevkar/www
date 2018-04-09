@@ -1,24 +1,3 @@
-/*	=== COLOR SCHEME ===
-SOLARIZED HEX     RGB        
---------- ------- -----------
-base03    #002b36   0  43  54 # navbar-item
-base02    #073642   7  54  66 # body
-base01    #586e75  88 110 117 # navbar-item:selected
-base00    #657b83 101 123 131 # navbar-item:hover
-base0     #839496 131 148 150
-base1     #93a1a1 147 161 161 
-base2     #eee8d5 238 232 213 
-base3     #fdf6e3 253 246 227 
-yellow    #b58900 181 137   0
-orange    #cb4b16 203  75  22
-red       #dc322f 220  50  47
-magenta   #d33682 211  54 130
-violet    #6c71c4 108 113 196
-blue      #268bd2  38 139 210
-cyan      #2aa198  42 161 152
-green     #859900 133 153   0
-	=== COLOR SCHEME ===   */
-
 /* Begin grid system */
 .row::after {
     content: "";
@@ -50,8 +29,7 @@ green     #859900 133 153   0
 /* Begin global styling */
 body {
     font-family: "Roboto", sans-serif;
-    color: #93a1a1;
-    background: #073642;
+    color: #111;
     padding: 0;
     margin: 0;
 }
@@ -62,20 +40,32 @@ body {
 /* Begin navbar styling */
 .navbar {
 	list-style-type: none;
-	background: #002b36;
+	background: #888;
 	height: 40px;
+	box-shadow: 0px 0px 5px 2px #000;
 }
-.navbar-item {
+[class*="navbar-"] {
 	float: left;
 	height: 100%;
-	text-align: center;
-	line-height: 40px;
 	margin-right: 4px;
 }
+.navbar-item {
+	text-align: center;
+	line-height: 40px;
+}
+.navbar-logo {
+  padding: 3px;
+}
 .navbar-item:hover {
-	background: #657b83;
+	background: #444;
 	cursor: pointer;
+	color: #888;
+}
+.navbar-item:first-child {
+  margin-left: 10px;
 }
 /* End navbar styling */
-
+.righty {
+  float: right;
+}
 /* End global styling */
