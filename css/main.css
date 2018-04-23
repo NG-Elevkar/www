@@ -1,32 +1,10 @@
 /* Begin grid system */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+
 * {
     box-sizing: border-box;
 }
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-[class*="col-"] {
-    float: left;
-    padding: 0;
-    margin: 0;
-}
-/* End grid system */
 
-/* Begin global styling */
+/* End grid system */
 body {
     font-family: "Roboto", sans-serif;
     color: #111;
@@ -34,15 +12,53 @@ body {
     margin: 0;
 }
 .header {
-    font-size: 22pt;
-    font-weight: 100;
+  text-align: center;
 }
-/* Begin navbar styling */
+.header-text {
+  font-size: 42pt;
+  font-weight: 100;
+  color: #FFF;
+  height: 90px;
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  padding: 10px;
+  background-color: rgba(40, 40, 40, 0.8);
+  top: 155px;
+  position: relative;
+}
+.section {
+  margin-top: 10px;
+  width: 70%;
+  margin: auto;
+}
+.paragraph {
+  margin: auto;
+  padding: 10px;
+}
+.paragraph-header {
+  margin: auto;
+  text-align: center;
+  font-size: 22pt;
+}
+.header-container {
+  height: 400px;
+  background-image: url("../img/banner_img.png");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  width: 100%;
+}
 .navbar {
 	list-style-type: none;
 	background: #888;
 	height: 40px;
 	box-shadow: 0px 0px 5px 2px #000;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 [class*="navbar-"] {
 	float: left;
@@ -52,6 +68,7 @@ body {
 .navbar-item {
 	text-align: center;
 	line-height: 40px;
+  padding: 0 5px 0 5px;
 }
 .navbar-logo {
   padding: 3px;
@@ -64,8 +81,36 @@ body {
 .navbar-item:first-child {
   margin-left: 10px;
 }
-/* End navbar styling */
 .righty {
   float: right;
 }
-/* End global styling */
+.person-image {
+  width: 120px;
+  margin: auto;
+}
+.person-image img {
+  width: 120px;
+}
+.person {
+  float: left;
+  margin-top: 25px;
+  width: 25%;
+}
+.person-title {
+  text-align: center;
+  font-size: 16pt;
+  font-weight: bold;
+}
+.person-name {
+  font-weight: bold;
+  text-align: center;
+}
+.person-description {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+.people-container {
+  margin: auto;
+  width: 100%;
+}
