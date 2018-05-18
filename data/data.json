@@ -1,0 +1,103 @@
+{
+	"navbar": [
+		{
+			"schedule": "about.html",
+			"text": {
+				"sv": "Om Oss",
+				"en": "About Us"
+			}
+		},
+		{
+			"id": "schedule",
+			"text": {
+				"sv": "Schema",
+				"en": "Schedule"
+			}
+		},
+		{
+			"src": "./img/logo_2083x1888_black_only_NG.png",
+			"float": "right"
+		}
+	],
+	"pages": {
+		"about": {
+			"title": {
+				"sv": "Om Oss",
+				"en": "About Us"
+			},
+			"content": [
+				{
+					"sections": [
+						{
+							"paragraphs": [
+								{
+									"header": {"sv": "Lorem", "en": "Lorem"}
+								},
+								{
+									"text": {
+										"sv": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+										"en": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+									}
+								},
+								{
+									"text": {
+										"sv": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+										"en": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+									}
+								},
+								{
+									"text": {
+										"sv": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+										"en": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+									}
+								}
+							]
+						},
+						{
+							"list": [
+								{
+								"header": {"sv": "Lorem", "en": "Lorem"}
+								},
+								{
+									"title": {"sv": "Dolor", "en": "Dolor"},
+									"src": "./img/people/placeholder.png",
+									"name": "Lorem Ipsum"
+								},
+								{
+									"title": {"sv": "Dolor", "en": "Dolor"},
+									"src": "./img/people/placeholder.png",
+									"name": "Lorem Ipsum",
+									"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
+								},
+								{
+									"title": {"sv": "Dolor", "en": "Dolor"},
+									"src": "./img/people/placeholder.png",
+									"name": "Lorem Ipsum",
+									"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
+								},
+								{
+									"title": {"sv": "Dolor", "en": "Dolor"},
+									"src": "./img/people/placeholder.png",
+									"name": "Lorem Ipsum",
+									"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
+								},
+								{
+									"title": {"sv": "Dolor", "en": "Dolor"},
+									"src": "./img/people/placeholder.png",
+									"name": "Lorem Ipsum",
+									"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
+								},
+								{
+									"title": {"sv": "Dolor", "en": "Dolor"},
+									"src": "./img/people/placeholder.png",
+									"name": "Lorem Ipsum",
+									"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	}
+}

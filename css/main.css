@@ -1,10 +1,6 @@
-/* Begin grid system */
-
 * {
     box-sizing: border-box;
 }
-
-/* End grid system */
 body {
     font-family: "Roboto", sans-serif;
     color: #111;
@@ -81,7 +77,7 @@ body {
 .navbar-item:first-child {
   margin-left: 10px;
 }
-.righty {
+.right {
   float: right;
 }
 .person-image {
