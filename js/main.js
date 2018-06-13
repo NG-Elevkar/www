@@ -38,22 +38,25 @@ function genPageContent(json) {
             if("header" in ck) {
               section.append($("<div/>").addClass("paragraph-header").text(ck["header"][locale]))
             } else if("title" in ck) {
-              l.append($("<div/>").addClass("person-name").text(ck["title"][locale]));
+              l.append($("<div/>").addClass("person-title").text(ck["title"][locale]));
               var isPerson = true;
-            } else {
+            } 
+			else {
               var isPerson = true;
             }
+			var personText = $("<div/>").addClass("person-text");
             if("src" in ck) {
               l.append($("<div/>").addClass("person-image").append($("<img/>").attr("src", ck["src"])));
             }
             if("name" in ck) {
-              l.append()
-            }
-            if("description" in ck) {
-
-            }
-            if(isPerson) {
-              pc.append(l);
+              personText.append($("<div/>", {class: "person-name"}).text(ck["name"]));
+			}
+			if("description" in ck) {
+				personText.append($("<div/>", {class: "person-description"}).text(ck["description"][locale]))
+			}
+			if(isPerson) {
+				l.append(personText);
+				pc.append(l);
             }
           }
           section.append(pc);
