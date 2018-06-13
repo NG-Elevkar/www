@@ -81,11 +81,11 @@ padding: 0;
   float: right;
 }
 .person-image {
-  width: 120px;
+  width: 100%;
   margin: auto;
 }
 .person-image img {
-  width: 120px;
+  width: 100%;
 }
 .person {
   float: left;
@@ -109,4 +109,15 @@ padding: 0;
 .people-container {
   margin: auto;
   width: 100%;
+}
+@media screen and (orientation: portrait) {
+	.section {
+		width: 90%;
+	}
+	.person {
+		width: 100%;
+	}
+	.person-image {
+		width: 50%;
+	}
 }

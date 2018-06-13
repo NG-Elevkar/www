@@ -1,7 +1,7 @@
 {
 	"navbar": [
 		{
-			"schedule": "about.html",
+			"id": "about",
 			"text": {
 				"sv": "Om Oss",
 				"en": "About Us"
@@ -20,6 +20,9 @@
 		}
 	],
 	"pages": {
+		"schedule": {
+			"title": {"sv": "Schema", "en": "Schedule"}
+		},
 		"about": {
 			"title": {
 				"sv": "Om Oss",
