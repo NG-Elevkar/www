@@ -40,7 +40,7 @@ function genPageContent(json) {
             } else if("title" in ck) {
               l.append($("<div/>").addClass("person-title").text(ck["title"][locale]));
               var isPerson = true;
-            } 
+            }
 			else {
               var isPerson = true;
             }
@@ -62,6 +62,15 @@ function genPageContent(json) {
           section.append(pc);
         }
         elems.push(section);
+      }
+    }
+    else if ("footer" in ci) {
+      if("objects" in ci["footer"]) {
+        var fo = ci["footer"]["objects"];
+        var footer = $("<div/>", {class: "footer"});
+        for (var i = 0; i < fo.length; i++) {
+          fo[i]; // TODO: Parse Footer (data.json:103)
+        }
       }
     }
   }

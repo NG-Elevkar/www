@@ -99,6 +99,24 @@
 							]
 						}
 					]
+				},
+				{
+					"footer": {
+						"objects": [
+							{
+								"text": {
+									"sv": "Om du upplever problem med sidan eller om du har önskemål på saker som ska låggas till så får ni gärna vända er till vår <a href='https://github.com/NG-Elevkar/www/issues'>Github Issue Tracker</a>",
+									"en": "If you want to request a feature, or if you are experiencing issues with the site, please leave an issue throuh our <a href='https://github.com/NG-Elevkar/www/issues'>Github Issue Tracker</a>"
+								}
+							},
+							{
+								"text": {
+									"sv": "Denna sida är skriven och underhålls av Kim Karlsson (GitHub/ParanoidVoxel) på uppdrag av Nacka Gymnasiums Elevkår",
+									"en": "This site is developed and maintained by Kim Karlsson (GitHub/ParanoidVoxel) on behalf of Nacka Gymnasiums Student Body"
+								}
+							}
+						]
+					}
 				}
 			]
 		}
