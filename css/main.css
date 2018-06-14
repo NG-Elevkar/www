@@ -1,3 +1,13 @@
+/*
+	File: css/main.css
+	Author(s): ParanoidVoxel
+	Description:
+		This is the main stylesheet.
+		It's used across all pages of the website.
+		
+*/
+
+/* Begin unspecific Styling */
 * {
     box-sizing: border-box;
 }
@@ -7,68 +17,106 @@ body {
     padding: 0;
     margin: 0;
 }
+/* End unspecific styling */
 .header {
-  text-align: center;
+	/* .header
+		The container for the page title that
+		is displayed first on all pages across the site
+	*/
+	text-align: center;
 }
 .header-text {
-  font-size: 42pt;
-  font-weight: 100;
-  color: #FFF;
-  height: 90px;
-  text-align: center;
-  display: inline-block;
-  margin: auto;
-  padding: 10px;
-  background-color: rgba(40, 40, 40, 0.8);
-  top: 155px;
-  position: relative;
+	/* .header-text
+		The title that is displayed first on all pages
+		across the site.	
+	*/
+	font-size: 42pt;
+	font-weight: 100;
+	color: #FFF;
+	height: 90px;
+	text-align: center;
+	display: inline-block;
+	margin: auto;
+	padding: 10px;
+	background-color: rgba(40, 40, 40, 0.8);
+	top: 155px;
+	position: relative;
+}
+.header-container {
+	/* .header-container
+		container for the .header and the 
+		banner image.
+	*/
+	height: 400px;
+	background-image: url("../img/banner_img.png");
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	width: 100%;
+	margin-bottom: 25px;
 }
 .section {
+	/* .section
+		A site is built up of sections.
+	*/
   margin-top: 10px;
   width: 70%;
   margin: auto;
   display: block;
 }
 .paragraph {
+	/* .paragraph
+		A paragraph of text.
+	*/
   margin: auto;
   padding: 10px;
 }
 .paragraph-header {
+	/* .paragraph-header
+		The header for a "paragraph" type section.
+	*/
   margin: auto;
   text-align: center;
   font-size: 22pt;
 }
-.header-container {
-  height: 400px;
-  background-image: url("../img/banner_img.png");
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  width: 100%;
-  margin-bottom: 25px;
-}
+
 .navbar {
+	/* .navbar 
+		The top-most navigation bar that contains links to all
+		the pages to the site.
+	*/
 	list-style-type: none;
 	background: #888;
 	height: 40px;
 	box-shadow: 0px 0px 5px 2px #000;
-position: fixed;
-z-index: 1;
-width: 100%;
-margin: 0;
-padding: 0;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 [class*="navbar-"] {
+	/* .navbar-*
+		All elements inside the navbar, including the images and the buttons
+		and dropdowns
+		TODO: Add Dropdown Component
+	*/
 	float: left;
 	height: 100%;
 	margin-right: 4px;
 }
 .navbar-item {
+	/* .navbar-item 
+		All text items in the .navbar
+	*/
 	text-align: center;
 	line-height: 40px;
-  padding: 0 5px 0 5px;
+	padding: 0 5px 0 5px;
 }
 .navbar-logo {
+	/* .navbar-logo
+		All image elements in the .navbar
+	*/
   padding: 3px;
 }
 .navbar-item:hover {
