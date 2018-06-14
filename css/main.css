@@ -27,6 +27,7 @@ body {
   margin-top: 10px;
   width: 70%;
   margin: auto;
+  display: block;
 }
 .paragraph {
   margin: auto;
@@ -111,7 +112,24 @@ padding: 0;
 }
 .people-container {
   margin: auto;
+	display: block;
   width: 100%;
+}
+.footer {
+	width: 100%;
+	display: block;
+	float: left;
+	padding: 20px;
+	font-size: 10pt;
+	background: #888;
+	color: #444;
+	margin-top: 10px;
+}
+.footer a {
+	color: #444;
+}
+.footer-text {
+	padding: 5px;
 }
 @media screen and (orientation: portrait) {
 	.section {
@@ -124,3 +142,4 @@ padding: 0;
 		width: 50%;
 	}
 }
+
