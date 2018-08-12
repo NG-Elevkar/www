@@ -1,124 +1,163 @@
 {
-	"navbar": [
-		{
-			"id": "about",
-			"text": {
-				"sv": "Om Oss",
-				"en": "About Us"
-			}
+"navbar": [
+	{
+	    "id": "about",
+	    "text": {
+		"sv": "Om Oss",
+		"en": "About Us"
+	    }
+	},
+	{
+	    "id": "schedule",
+	    "text": {
+		"sv": "Schema",
+		"en": "Schedule"
+	    }
+	},
+	{
+	    "src": "./img/logo_2083x1888_black_only_NG.png",
+	    "float": "right"
+	}
+    ],
+    "pages": {
+	"schedule": {
+	    "title": {"sv": "Schema", "en": "Schedule"},
+	    "content": ["schedule"]
+	},
+	"about": {
+	    "right": {
+		"title": {
+		    "sv": "Om skolan",
+		    "en": "About the school"
 		},
-		{
-			"id": "schedule",
-			"text": {
-				"sv": "Schema",
-				"en": "Schedule"
-			}
+		"content": [
+		    {
+			"sections": [
+			    {
+				"paragraphs": [
+				    {
+					"header": {"sv": "Höger Titel 1", "en": "Right Title 2"}
+				    },
+				    {
+					"text": {
+					    "text": {
+						"sv": "Första text paragrafen höger sida",
+						"en": "First text paragraph right side"
+					    }
+					}
+				    }
+				]
+			    }
+			]
+		    }
+		]
+	    },
+	    "left": {
+		"title": {
+		    "sv": "Om elevkåren",
+		    "en": "About the student body"
 		},
-		{
-			"src": "./img/logo_2083x1888_black_only_NG.png",
-			"float": "right"
-		}
-	],
-	"pages": {
-		"schedule": {
-			"title": {"sv": "Schema", "en": "Schedule"}
-		},
-		"about": {
-			"title": {
-				"sv": "Om Oss",
-				"en": "About Us"
-			},
-			"content": [
+		"content": [
+		    {
+			"sections": [
+			    {
+				"paragraphs": [
+				    {
+					"header": {"sv": "Lorem", "en": "Lorem"}
+				    },
+				    {
+					"text": {
+					    "sv": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					    "en": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					}
+				    },
+				    {
+					"text": {
+					    "sv": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					    "en": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					}
+				    },
+				    {
+					"text": {
+					    "sv": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					    "en": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					}
+				    }
+				]
+			    },
+			    {
+				"list": [
+				    {
+					"header": {"sv": "Lorem", "en": "Lorem"}
+				    },
+				    {
+					"title": {"sv": "Dolor", "en": "Dolor"},
+					"src": "./img/people/placeholder.png",
+					"name": "Lorem Ipsum"
+				    },
+				    {
+					"title": {"sv": "Dolor", "en": "Dolor"},
+					"src": "./img/people/placeholder.png",
+					"name": "Lorem Ipsum",
+					"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
+				    },
+				    {
+					"title": {"sv": "Dolor", "en": "Dolor"},
+					"src": "./img/people/placeholder.png",
+					"name": "Lorem Ipsum",
+					"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
+				    },
+				    {
+					"title": {"sv": "Dolor", "en": "Dolor"},
+					"src": "./img/people/placeholder.png",
+					"name": "Lorem Ipsum",
+					"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
+				    },
+				    {
+					"title": {"sv": "Dolor", "en": "Dolor"},
+					"src": "./img/people/placeholder.png",
+					"name": "Lorem Ipsum",
+					"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
+				    },
+				    {
+					"title": {"sv": "Dolor", "en": "Dolor"},
+					"src": "./img/people/placeholder.png",
+					"name": "Lorem Ipsum",
+					"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
+				    }
+				]
+			    },
+			    {
+				"calendar": {
+				    "entries": [
+					{"date": "1/1", "text": {"sv": "Event 1", "en": "event1"}, "time": "00:00"},
+					
+					{"date": "2/1", "text": {"sv": "Event 2", "en": "event2"}, "time": "12:00"}
+				    ]
+				}
+			    }
+			]
+		    },
+		    {
+			"footer": {
+			    "objects": [
 				{
-					"sections": [
-						{
-							"paragraphs": [
-								{
-									"header": {"sv": "Lorem", "en": "Lorem"}
-								},
-								{
-									"text": {
-										"sv": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-										"en": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-									}
-								},
-								{
-									"text": {
-										"sv": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-										"en": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-									}
-								},
-								{
-									"text": {
-										"sv": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-										"en": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-									}
-								}
-							]
-						},
-						{
-							"list": [
-								{
-								"header": {"sv": "Lorem", "en": "Lorem"}
-								},
-								{
-									"title": {"sv": "Dolor", "en": "Dolor"},
-									"src": "./img/people/placeholder.png",
-									"name": "Lorem Ipsum"
-								},
-								{
-									"title": {"sv": "Dolor", "en": "Dolor"},
-									"src": "./img/people/placeholder.png",
-									"name": "Lorem Ipsum",
-									"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
-								},
-								{
-									"title": {"sv": "Dolor", "en": "Dolor"},
-									"src": "./img/people/placeholder.png",
-									"name": "Lorem Ipsum",
-									"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
-								},
-								{
-									"title": {"sv": "Dolor", "en": "Dolor"},
-									"src": "./img/people/placeholder.png",
-									"name": "Lorem Ipsum",
-									"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
-								},
-								{
-									"title": {"sv": "Dolor", "en": "Dolor"},
-									"src": "./img/people/placeholder.png",
-									"name": "Lorem Ipsum",
-									"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
-								},
-								{
-									"title": {"sv": "Dolor", "en": "Dolor"},
-									"src": "./img/people/placeholder.png",
-									"name": "Lorem Ipsum",
-									"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
-								}
-							]
-						}
-					]
+				    "text": {
+					"sv": "Om du upplever problem med sidan eller om du har önskemål på saker som ska låggas till så får ni gärna vända er till vår <a href='https://github.com/NG-Elevkar/www/issues'>Github Issue Tracker</a>.",
+					"en": "If you want to request a feature, or if you are experiencing issues with the site, please leave an issue throuh our <a href='https://github.com/NG-Elevkar/www/issues'>Github Issue Tracker</a>."
+				    }
 				},
 				{
-					"footer": {
-						"objects": [
-							{
-								"text": {
-									"sv": "Om du upplever problem med sidan eller om du har önskemål på saker som ska låggas till så får ni gärna vända er till vår <a href='https://github.com/NG-Elevkar/www/issues'>Github Issue Tracker</a>.",
-									"en": "If you want to request a feature, or if you are experiencing issues with the site, please leave an issue throuh our <a href='https://github.com/NG-Elevkar/www/issues'>Github Issue Tracker</a>."
-								}
-							},
-							{
-								"text": {
-									"sv": "Denna sida är utvecklad och underhållen av Kim Karlsson (GitHub/ParanoidVoxel) på uppdrag av Nacka Gymnasiums Elevkår.",
-									"en": "This site is developed and maintained by Kim Karlsson (GitHub/ParanoidVoxel) on behalf of Nacka Gymnasiums Student Body."
-								}
-							}
-						]
-					}
+				    "text": {
+					"sv": "Denna sida är utvecklad och underhållen av Kim Karlsson (GitHub/ParanoidVoxel) på uppdrag av Nacka Gymnasiums Elevkår.",
+					"en": "This site is developed and maintained by Kim Karlsson (GitHub/ParanoidVoxel) on behalf of Nacka Gymnasiums Student Body."
+				    }
 				}
-			]
-		}
+			    ]
+			}
+		    }
+		]
+	    }
 	}
+    }
 }

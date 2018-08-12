@@ -1,0 +1,42 @@
+$(document).ready(function() {
+    $(document.body).append($("<div/>", {
+	id: "left"
+    }).append($("<div/>", {
+	class: "content"
+    })).append($("<div/>", {
+	class: "separator",
+	onclick: "toggleSide(this)",
+	"data-side": "left"
+    }).append($("<span/>", {
+	class: "label",
+	text: "«"
+    })))).append($("<div/>", {
+	id: "right"
+    }).append($("<div/>", {
+	class: "content"
+    })).append($("<div/>", {
+	class: "separator",
+	onclick: "toggleSide(this)",
+	"data-side": "right"
+    }).append($("<span/>", {
+	class: "label",
+	text: "»"
+    }))));
+    $("#right").hide();
+});
+function toggleSide(obj) {
+    var sideToToggle = obj.dataset.side;
+    if(sideToToggle == "left") {
+	hide($("#left"), "left");
+	show($("#right"), "right");
+    } else {
+	hide($("#right"), "right");
+	show($("#left"), "left");
+    }
+}
+function hide(element, side) {
+    element.animate({"right": "-100%"}, "1000", "swing");
+}
+function show(element) {
+    element.animate({"right": "0%"}, "1000");
+}

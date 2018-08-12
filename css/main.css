@@ -16,6 +16,7 @@ body {
     color: #111;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 /* End unspecific styling */
 .header {
@@ -159,9 +160,9 @@ body {
   margin: auto;
 }
 .people-container {
-  margin: auto;
-	display: block;
-  width: 100%;
+    margin: auto;
+    display: block;
+    width: 100%;
 }
 .footer {
 	width: 100%;
@@ -190,4 +191,40 @@ body {
 		width: 50%;
 	}
 }
+#left .separator {
+    height: 100vh;
+    line-height: 100vh;
+    float: right;
+    border-right: 4px solid #000;
+}
+.separator .label {
+    background: #333;
+    color: #FFF;
+    padding: 10px;
+    border-top: 4px solid #AAA;
+    border-bottom: 4px solid #AAA;
+}
 
+#right .separator {
+    height: 100vh;
+    line-height: 100vh;
+    float: left;
+    border-left: 4px solid #000;
+}
+#left .separator .label {
+    border-left: 4px solid #AAA;
+}
+#right .separator .label {
+    border-right: 4px solid #AAA;
+}
+#right {
+    width: 100%;
+    position: absolute;
+}
+#left {
+    width: 100%;
+    position: absolute;
+}
+.separator {
+    height: 100vh;
+}
