@@ -21,8 +21,14 @@
     ],
     "pages": {
 	"schedule": {
-	    "title": {"sv": "Schema", "en": "Schedule"},
-	    "content": ["schedule"]
+	    "left": {
+		"title": {"sv": "Elevkårens Kalender", "en": "The studentbody's Schedule"},
+		"content": ["schedule"]
+	    },
+	    "right": {
+		"title": {"sv": "Skolans Schema", "en": "Schedule"},
+		"content": ["schedule"]
+	    }
 	},
 	"about": {
 	    "right": {

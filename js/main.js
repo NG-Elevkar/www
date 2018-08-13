@@ -25,6 +25,7 @@ function init(obj) {
 function empty() {
     $("#left .content").empty();
     $("#right .content").empty();
+    console.log("Empty Called");
 }
 
 function genPageContent(json, side) {
