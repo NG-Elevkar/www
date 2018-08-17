@@ -1,9 +1,11 @@
 $(document).ready(function() {
+	sliderInit();
+});
+
+function sliderInit() {
     $(document.body).append($("<div/>", {
 	id: "left"
     }).append($("<div/>", {
-	class: "content"
-    })).append($("<div/>", {
 	class: "separator",
 	onclick: "toggleSide(this)",
 	"data-side": "left"
@@ -13,8 +15,6 @@ $(document).ready(function() {
     })))).append($("<div/>", {
 	id: "right"
     }).append($("<div/>", {
-	class: "content"
-    })).append($("<div/>", {
 	class: "separator",
 	onclick: "toggleSide(this)",
 	"data-side": "right"
@@ -22,8 +22,9 @@ $(document).ready(function() {
 	class: "label",
 	text: "»"
     }))));
+	console.log("sliderInit Called");
     hideRight($("#right"));
-});
+}
 function toggleSide(obj) {
     var sideToToggle = obj.dataset.side;
     if(sideToToggle == "left") {

@@ -1,6 +1,6 @@
 var locale = "sv";
 var test;
-var elemsObj = {"left": [], "right": []};
+
 fetch("./../data/data.json")
     .then(function(response) {
 	return response.json();
@@ -11,30 +11,35 @@ fetch("./../data/data.json")
     .then(function() {
 	$(document).ready(function() {
 	    genNavbar(test["navbar"]);
+		console.log("fetch ready run");
 	    init({"page": "about"});
 	});
     });
 
 function init(obj) {
-    console.log(obj);
+	console.log(obj);
     empty();
     genPageContent(test["pages"][obj["page"]], "left");
     genPageContent(test["pages"][obj["page"]], "right");
 }
 
 function empty() {
-    $("#left .content").empty();
-    $("#right .content").empty();
     console.log("Empty Called");
+    $("#left").remove();
+    $("#right").remove();
+	sliderInit();
 }
 
 function genPageContent(json, side) {
+	var elemsObj = {"left": [], "right": []};
+	console.log(json);
     if("title" in json[side]) {
 	elemsObj[side].push($("<div/>").addClass("header-container").append($("<div/>").addClass("header").append($("<div/>").addClass("header-text").text(json[side]["title"][locale]))));
 	document.title = "NG Elevkår - " + json[side]["title"][locale];
     }
     for (var i = 0; i < json[side]["content"].length; i++) {
 	var ci = json[side]["content"][i];
+	console.log(ci);
 	var elems = elemsObj[side];
 	if(ci == "schedule") {
 	    elems.push(genSchedule());
@@ -75,8 +80,7 @@ function genPageContent(json, side) {
 			if("header" in ck) {
 			    section.append($("<div/>").addClass("paragraph-header").text(ck["header"][locale]))
 			} else if("title" in ck) {
-			    l.append($("<div/>").addClass("person-title").text(ck["title"][locale]));
-			    var isPerson = true;
+			    l.append($("<div/>").addClass("person-title").text(ck["title"][locale])); var isPerson = true;
 			}
 			else {
 			    var isPerson = true;
