@@ -157,10 +157,14 @@ function genSchedule(uid) {
     var scheduleContainer = $("<div/>", {class: "schedule-container"});
     var scheduleSettings = $("<div/>", {class: "schedule-settings"});
     var scheduleImg = $("<img/>", {id: "schedule-img"});
+
     scheduleSettings.append($("<input/>", {type: "text", placeholder: "Class ID", id: "class-id"}).val(uid));
     scheduleSettings.append($("<input/>", {type: "submit", value: "Submit"}).on("click", function() {
       $("#schedule-img").attr("src", getSchedule($("#class-id").val()));
     }));
+    if(uid) {
+      scheduleImg.attr("src", getSchedule($("#class-id").val()));
+    }
     scheduleContainer.append(scheduleSettings);
     scheduleContainer.append(scheduleImg);
     return scheduleContainer;
