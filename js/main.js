@@ -25,7 +25,8 @@ function init(obj) {
 	  window.location.href = window.location.href.split("#")[0] + "#" + obj["page"];
     genPageContent(test["pages"][obj["page"]], "left");
     genPageContent(test["pages"][obj["page"]], "right");
-    generateFooter();
+    $("#right").append(generateFooter());
+    $("#left").append(generateFooter());
 }
 
 function empty() {
@@ -47,8 +48,7 @@ function generateFooter() {
     footer.append($("<div/>", {class: "footer-text"}).html(fi["text"][locale]));
       }
   }
-  $("#right").append(footer);
-  $("#left").append(footer);
+  return footer;
 }
 
 function genPageContent(json, side) {

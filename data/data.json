@@ -53,10 +53,15 @@
 				"text": "2018", "entries": [{
 					"text": "1/1", "entries": [{
 						"text": "<strong>12:00</strong>: Some random event"
-						}]
-					}]
-				}]
-			}}]
+						}
+						]
+						}
+						]
+						}
+						]
+						}
+						}
+					]
 	    },
 	    "right": {
 			"title": {"sv": "Skolans Schema", "en": "Schedule"},
