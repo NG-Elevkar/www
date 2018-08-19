@@ -4,7 +4,7 @@ function getTime() { // docs:getTime
         var oneJan = new Date(this.getFullYear(), 0, 1);
         return Math.ceil((((this - oneJan) / 86400000) + oneJan.getDay() + 1) / 7);
     }
-    return [new Date().getWeek(), new Date().getDay() - 1, [1, 2, 4, 8, 16, 1, 1][new Date().getDay() - 1]];
+    return [new Date().getWeek(), new Date().getDay(), [1, 2, 4, 8, 16, 1, 1][new Date().getDay()]];
 }
 function genSchedLink(ao) { // docs:genSchedLink
     ao["wi"] = Math.round(ao["sc"].width());
