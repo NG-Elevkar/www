@@ -156,7 +156,7 @@ function getImage(classId) {
 function genSchedule() {
     var scheduleContainer = $("<div/>", {class: "schedule-container"});
     var scheduleSettings = $("<div/>", {class: "schedule-settings"});
-    var scheduleImg = $("<img/>", {class: "schedule-img"});
+    var scheduleImg = $("<img/>", {id: "schedule-img"});
     scheduleSettings.append($("<input/>", {type: "text", placeholder: "Class ID", id: "class-id"}));
     scheduleSettings.append($("<input/>", {type: "submit", value: "Submit"}).on("click", function() {
       $("#schedule-img").attr("src", getSchedule($("#class-id").val()));

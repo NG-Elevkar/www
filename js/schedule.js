@@ -9,6 +9,7 @@ function getTime() { // docs:getTime
 function genSchedLink(ao) { // docs:genSchedLink
     ao["wi"] = Math.round(ao["sc"].width());
     ao["he"] = Math.round(ao["sc"].height());
+    console.log(ao);
     ta = getTime();
     var link = [
 	"http://www.novasoftware.se/ImgGen/schedulegenerator.aspx", "?format=png",
@@ -38,11 +39,10 @@ function grabCookie(cname) { //docs:grabCookie
 function getSchedule(uid) {
     if(grabCookie("json")) {
     	var cjson = JSON.parse(grabCookie("json"));
-	    document.cookie = "json={\"uid\": \"" + uid + "\"};expires=Thu, 18 Dec 2026 12:00:00 UTC";
+      var uid = cjson["uid"];
       var sid = 58700;
-    } else {
-
     }
+    document.cookie = "json={\"uid\": \"" + uid + "\"};expires=Thu, 18 Dec 2026 12:00:00 UTC";
     var test = document.getElementById('schedule-img');
-    genSchedLink({"sc": test, "sid": sid, "uid": uid});
+    return genSchedLink({"sc": test, "sid": sid, "uid": uid});
 }
