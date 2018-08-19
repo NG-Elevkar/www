@@ -249,5 +249,13 @@ body {
 }
 
 .entry .date::after {
-  content: ": "
+  content: ": ";
+}
+
+.entry .text::after {
+  content: " - ";
+}
+
+.entry .time {
+  font-weight: bold;
 }
