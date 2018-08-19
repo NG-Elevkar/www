@@ -154,5 +154,7 @@ function genSchedule() {
     var scheduleSettings = $("<div/>", {class: "schedule-settings"});
     var scheduleImg = $("<img/>", {class: "schedule-img"});
     scheduleSettings.append($("<input/>", {type: "text", class: "class-id"}));
+    scheduleContainer.append(scheduleSettings);
+    scheduleContainer.append(scheduleImg);
     return scheduleContainer;
 }
