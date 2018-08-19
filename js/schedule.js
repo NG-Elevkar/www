@@ -43,5 +43,6 @@ function getSchedule(uid) {
     } else {
 
     }
-    genSchedLink({"sc": document.getElementById('schedule-img'), "sid": sid, "uid": uid})
+    var test = document.getElementById('schedule-img');
+    genSchedLink({"sc": test, "sid": sid, "uid": uid});
 }
