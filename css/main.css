@@ -200,6 +200,7 @@ body {
     line-height: 100vh;
     float: right;
     border-right: 1px solid #000;
+    right: 0;
 }
 .separator .label {
     background: #333;
@@ -231,6 +232,7 @@ body {
 }
 .separator {
     height: 100vh;
+    position: fixed;
 }
 .calendar {
 	margin: auto;
