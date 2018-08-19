@@ -149,12 +149,18 @@ function genNavbar(json) {
 	$(document.body).prepend(rootBar);
     }
 
+function getImage(classId) {
+  var url = [];
+}
+
 function genSchedule() {
     var scheduleContainer = $("<div/>", {class: "schedule-container"});
     var scheduleSettings = $("<div/>", {class: "schedule-settings"});
     var scheduleImg = $("<img/>", {class: "schedule-img"});
-    scheduleSettings.append($("<input/>", {type: "text", placeholder: "Class ID", class: "class-id"}));
-    scheduleSettings.append($("<button/>", {value: "Submit"}));
+    scheduleSettings.append($("<input/>", {type: "text", placeholder: "Class ID", id: "class-id"}));
+    scheduleSettings.append($("<button>Submit<button/>").on("click", function() {
+      $("#schedule-img").attr("src", getSchedule($("#class-id").val()));
+    }));
     scheduleContainer.append(scheduleSettings);
     scheduleContainer.append(scheduleImg);
     return scheduleContainer;
