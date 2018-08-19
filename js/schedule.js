@@ -14,7 +14,7 @@ function genSchedLink(ao) { // docs:genSchedLink
 	"http://www.novasoftware.se/ImgGen/schedulegenerator.aspx", "?format=png",
 	"&schoolid=" + ao["sid"], "/sv-se", "&type=-1",
 	"&id=" + ao["uid"], "&period=",
-	"&week=" + $("#week").val(),
+	"&week=" + ta[0],
 	"&printer=0", "&mode=0", "&colors=32", "&head=1", "&clock=1", "&foot=1",
 	"&day=" + ta[2],
 	"&width=" + ao["wi"],
@@ -35,13 +35,13 @@ function grabCookie(cname) { //docs:grabCookie
     return false;
 }
 
-function main(uid) {
+function getSchedule(uid) {
     if(grabCookie("json")) {
     	var cjson = JSON.parse(grabCookie("json"));
 	    document.cookie = "json={\"uid\": \"" + uid + "\"};expires=Thu, 18 Dec 2026 12:00:00 UTC";
-    	$("#uid").val(cjson["uid"]);
       var sid = 58700;
     } else {
-	    alert("Please enter your Class ID");
+
     }
+    genSchedLink({"sc": document.getElementById('schedule-img'), "sid": sid, "uid": uid})
 }

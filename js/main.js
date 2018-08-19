@@ -158,7 +158,7 @@ function genSchedule() {
     var scheduleSettings = $("<div/>", {class: "schedule-settings"});
     var scheduleImg = $("<img/>", {class: "schedule-img"});
     scheduleSettings.append($("<input/>", {type: "text", placeholder: "Class ID", id: "class-id"}));
-    scheduleSettings.append($("<button/>").val("submit").on("click", function() {
+    scheduleSettings.append($("<input/>", {type: "submit", value: "Submit"}).on("click", function() {
       $("#schedule-img").attr("src", getSchedule($("#class-id").val()));
     }));
     scheduleContainer.append(scheduleSettings);
