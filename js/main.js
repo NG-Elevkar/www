@@ -162,10 +162,10 @@ function genSchedule(uid) {
     scheduleSettings.append($("<input/>", {type: "submit", value: "Submit"}).on("click", function() {
       $("#schedule-img").attr("src", getSchedule($("#class-id").val()));
     }));
-    if(uid) {
-      scheduleImg.attr("src", getSchedule($("#class-id").val()));
-    }
     scheduleContainer.append(scheduleSettings);
     scheduleContainer.append(scheduleImg);
+    scheduleContainer.load(function() {
+      $("#schedule-img").attr("src", getSchedule($("#class-id").val()));
+    });
     return scheduleContainer;
 }
