@@ -21,8 +21,8 @@ fetch("./data/data.json")
 
 function init(obj) {
     empty();
-	console.log(obj);
-	window.location.href = window.location.href.split("#")[0] + "#" + obj["page"];
+	  console.log(obj);
+	  window.location.href = window.location.href.split("#")[0] + "#" + obj["page"];
     genPageContent(test["pages"][obj["page"]], "left");
     genPageContent(test["pages"][obj["page"]], "right");
     generateFooter();
@@ -31,7 +31,7 @@ function init(obj) {
 function empty() {
     $("#left").remove();
     $("#right").remove();
-	sliderInit();
+  	sliderInit();
 }
 
 function genList(list) {
@@ -39,8 +39,6 @@ function genList(list) {
 }
 
 function generateFooter() {
-  var left = $("#left");
-  var right = $("#right");
   var fo = test["footer"]["objects"]; // Footer Objects
   var footer = $("<div/>", {class: "footer"});
   for (var i = 0; i < fo.length; i++) {
@@ -49,8 +47,8 @@ function generateFooter() {
     footer.append($("<div/>", {class: "footer-text"}).html(fi["text"][locale]));
       }
   }
-  left.append(footer);
-  right.append(footer);
+  $("#right").append(footer);
+  $("#left").append(footer);
 }
 
 function genPageContent(json, side) {

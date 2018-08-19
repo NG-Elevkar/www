@@ -16,6 +16,7 @@ body {
     color: #111;
     padding: 0;
     margin: 0;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 /* End unspecific styling */
@@ -174,6 +175,8 @@ body {
 	background: #888;
 	color: #444;
 	margin-top: 10px;
+  position: absolute;
+  bottom: 0;
 }
 .footer a {
 	color: #444;
@@ -223,10 +226,12 @@ body {
     border-right: 1px solid #AAA;
 }
 #right {
+    min-height: 100vh;
     width: 100%;
     position: absolute;
 }
 #left {
+    min-height: 100vh;
     width: 100%;
     position: absolute;
 }
@@ -271,4 +276,10 @@ body {
 #schedule-img {
   width: 200px;
   height: 400px;
+}
+
+.people-container::after {
+    clear: both;
+    content: "";
+    display: block;
 }
