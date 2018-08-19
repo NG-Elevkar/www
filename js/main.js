@@ -11,58 +11,63 @@ fetch("./../data/data.json")
     .then(function() {
 	$(document).ready(function() {
 	    genNavbar(test["navbar"]);
-		console.log("fetch ready run");
-	    init({"page": "about"});
+		var page = "about";
+		if(window.location.href.split("#")[1]) {
+			page = window.location.href.split("#")[1];
+		}
+	    init({"page": page});
 	});
     });
 
 function init(obj) {
-	console.log(obj);
     empty();
+	console.log(obj);
+	window.location.href = window.location.href.split("#")[0] + "#" + obj["page"];
     genPageContent(test["pages"][obj["page"]], "left");
     genPageContent(test["pages"][obj["page"]], "right");
 }
 
 function empty() {
-    console.log("Empty Called");
     $("#left").remove();
     $("#right").remove();
 	sliderInit();
 }
 
+function genList(list) {
+	console.log(list);
+}
+
 function genPageContent(json, side) {
 	var elemsObj = {"left": [], "right": []};
-	console.log(json);
     if("title" in json[side]) {
 	elemsObj[side].push($("<div/>").addClass("header-container").append($("<div/>").addClass("header").append($("<div/>").addClass("header-text").text(json[side]["title"][locale]))));
 	document.title = "NG Elevkår - " + json[side]["title"][locale];
     }
     for (var i = 0; i < json[side]["content"].length; i++) {
 	var ci = json[side]["content"][i];
-	console.log(ci);
 	var elems = elemsObj[side];
 	if(ci == "schedule") {
 	    elems.push(genSchedule());
+	}
+	else if ("calendar" in ci) {
+	    var calendarRoot = $("<ul/>", {
+		class: "calendar"
+	    });
+	    for(var i = 0; i < ci["calendar"]["entries"].length; i++) {
+		calendarRoot.append($("<li/>", {class: "entry"}).append(
+		    $("<span/>", {
+			class: "date"
+		    }).text(ci["calendar"]["entries"][i]["date"])
+		).append($("<span/>", {class: "text"}).text(ci["calendar"]["entries"][i]["text"][locale])).append(
+		    $("<span/>", {class: "time"}).text(ci["calendar"]["entries"][i]["time"])
+		));
+	    }
+	    elems.push(calendarRoot);
 	}
 	else if("sections" in ci) {
 	    for (var j = 0; j < ci["sections"].length; j++) {
 		var section = $("<div/>").addClass("section");
 		var cj = ci["sections"][j];
-		if ("calendar" in ci) {
-		    var calendarRoot = $("<li/>", {
-			class: "calendar"
-		    });
-		    for(var i = 0; i < ci["calendar"]["entries"].length; i++) {
-			calendarRoot.append($("<li/>", {class: "entry"}).append(
-			    $("<span/>", {
-				class: "date"
-			    }).text(ci["calendar"]["entries"][i]["date"])
-			).append($("<span/>", {class: "text"}).text(ci["calendar"]["entries"][i]["text"][locale])).append(
-			    $("<span/>", {class: "time"}).text(ci["calendar"]["entries"][i]["time"])
-			));
-		    }
-		    elems.push(calendarRoot);
-		}
 		if("paragraphs" in cj) {
 		    for (var k = 0; k < cj["paragraphs"].length; k++) {
 			var ck = cj["paragraphs"][k];
@@ -143,6 +148,7 @@ function genNavbar(json) {
     }
 	$(document.body).prepend(rootBar);
     }
+
 function genSchedule() {
     var scheduleContainer = $("<div/>", {class: "schedule-container"});
     var scheduleSettings = $("<div/>", {class: "schedule-settings"});

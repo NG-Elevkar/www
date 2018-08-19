@@ -23,11 +23,28 @@
 	"schedule": {
 	    "left": {
 		"title": {"sv": "Elevkårens Kalender", "en": "The studentbody's Schedule"},
-		"content": ["schedule"]
+		"content": [
+			    {
+				"calendar": {
+				    "entries": [
+					{"date": "1/1", "text": {"sv": "Event 1", "en": "event1"}, "time": "00:00"},
+					{"date": "2/1", "text": {"sv": "Event 2", "en": "event2"}, "time": "12:00"}
+				    ]
+				}},
+			{"list": {
+			"title": "Årskalender",
+			"entries": [{
+				"text": "2018", "entries": [{
+					"text": "1/1", "entries": [{
+						"text": "<strong>12:00</strong>: Some random event"
+						}]
+					}]
+				}]
+			}}]
 	    },
 	    "right": {
-		"title": {"sv": "Skolans Schema", "en": "Schedule"},
-		"content": ["schedule"]
+			"title": {"sv": "Skolans Schema", "en": "Schedule"},
+			"content": ["schedule"]
 	    }
 	},
 	"about": {
@@ -132,15 +149,6 @@
 					"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
 				    }
 				]
-			    },
-			    {
-				"calendar": {
-				    "entries": [
-					{"date": "1/1", "text": {"sv": "Event 1", "en": "event1"}, "time": "00:00"},
-					
-					{"date": "2/1", "text": {"sv": "Event 2", "en": "event2"}, "time": "12:00"}
-				    ]
-				}
 			    }
 			]
 		    },

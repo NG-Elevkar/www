@@ -228,3 +228,15 @@ body {
 .separator {
     height: 100vh;
 }
+.calendar {
+	margin: auto;
+	display: table;
+	list-style: none;
+}
+.calendar .entry {
+	margin-bottom: 4px;
+	border-bottom: 1px solid #000;
+}
+.calendar:first-child {
+	border-top: 2px solid #000;
+}
