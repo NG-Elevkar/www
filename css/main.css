@@ -192,6 +192,9 @@ body {
 	.person-image {
 		width: 50%;
 	}
+  .header-text {
+    font-size: 22pt;
+  }
 }
 #left .separator {
     height: 100vh;

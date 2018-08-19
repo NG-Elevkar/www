@@ -37,6 +37,18 @@ function genList(list) {
 	console.log(list);
 }
 
+function generateFooter() {
+  var fo = test["footer"]["objects"]; // Footer Objects
+  var footer = $("<div/>", {class: "footer"});
+  for (var i = 0; i < fo.length; i++) {
+      var fi = fo[i]; // Footer Item
+      if("text" in fi) {
+    footer.append($("<div/>", {class: "footer-text"}).html(fi["text"][locale]));
+      }
+  }
+  return footer;
+}
+
 function genPageContent(json, side) {
 	var elemsObj = {"left": [], "right": []};
     if("title" in json[side]) {
@@ -112,15 +124,7 @@ function genPageContent(json, side) {
 	}
 	else if ("footer" in ci) {
 	    if("objects" in ci["footer"]) {
-		var fo = ci["footer"]["objects"]; // Footer Objects
-		var footer = $("<div/>", {class: "footer"});
-		for (var i = 0; i < fo.length; i++) {
-		    var fi = fo[i]; // Footer Item
-		    if("text" in fi) {
-			footer.append($("<div/>", {class: "footer-text"}).html(fi["text"][locale]));
-		    }
-		}
-		elems.push(footer);
+
 	    }
 	}
     }
