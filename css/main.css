@@ -235,6 +235,7 @@ body {
 }
 .calendar .entry {
 	margin-bottom: 4px;
+  padding-bottom: 4px;
 	border-bottom: 1px solid #000;
 }
 .entry:first-child {
@@ -242,6 +243,8 @@ body {
 }
 .entry:last-child {
   border-bottom: 2px solid #000;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .entry .date {
   font-weight: bold;
