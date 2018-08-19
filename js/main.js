@@ -47,7 +47,7 @@ function genPageContent(json, side) {
 	var ci = json[side]["content"][i];
 	var elems = elemsObj[side];
 	if(ci == "schedule") {
-	    elems.push(genSchedule());
+	    elems.push(genSchedule(getCookie()));
 	}
 	else if ("calendar" in ci) {
 	    var calendarRoot = $("<ul/>", {
@@ -153,11 +153,11 @@ function getImage(classId) {
   var url = [];
 }
 
-function genSchedule() {
+function genSchedule(uid) {
     var scheduleContainer = $("<div/>", {class: "schedule-container"});
     var scheduleSettings = $("<div/>", {class: "schedule-settings"});
     var scheduleImg = $("<img/>", {id: "schedule-img"});
-    scheduleSettings.append($("<input/>", {type: "text", placeholder: "Class ID", id: "class-id"}));
+    scheduleSettings.append($("<input/>", {type: "text", placeholder: "Class ID", id: "class-id"}).val(uid));
     scheduleSettings.append($("<input/>", {type: "submit", value: "Submit"}).on("click", function() {
       $("#schedule-img").attr("src", getSchedule($("#class-id").val()));
     }));

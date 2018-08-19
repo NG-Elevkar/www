@@ -1,4 +1,11 @@
 var ta;
+function getCookie() {
+  if(grabCookie("json")) {
+    var cjson = JSON.parse(grabCookie("json"));
+    return cjson["uid"];
+  }
+  return "";
+}
 function getTime() { // docs:getTime
     Date.prototype.getWeek = function () {
         var oneJan = new Date(this.getFullYear(), 0, 1);
@@ -36,12 +43,9 @@ function grabCookie(cname) { //docs:grabCookie
     return false;
 }
 
-function getSchedule(uid) {
-    if(grabCookie("json")) {
-    	var cjson = JSON.parse(grabCookie("json"));
-      var uid = cjson["uid"];
-      var sid = 58700;
-    }
+function getSchedule() {
+    var sid = 58700;
+    var uid = $("#class-id").val();
     document.cookie = "json={\"uid\": \"" + uid + "\"};expires=Thu, 18 Dec 2026 12:00:00 UTC";
     var test = $('#schedule-img');
     return genSchedLink({"sc": test, "sid": sid, "uid": uid});
