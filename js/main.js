@@ -156,7 +156,7 @@ function getImage(classId) {
 function genSchedule(uid) {
     var scheduleContainer = $("<div/>", {class: "schedule-container"});
     var scheduleSettings = $("<div/>", {class: "schedule-settings"});
-    var scheduleImgContainer = $("<div/>", {class: "schedule-img-container"}).on("ready", function() {
+    var scheduleImgContainer = $("<div/>", {class: "schedule-img-container"}).on("load", function() {
       $("#schedule-img").attr("src", getSchedule($("#class-id").val()));
     });
     var scheduleImg = $("<img/>", {id: "schedule-img"});
