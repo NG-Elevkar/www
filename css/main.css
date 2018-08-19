@@ -243,3 +243,7 @@ body {
 .entry:last-child {
   border-bottom: 2px solid #000;
 }
+.entry .date {
+  font-weight: bold;
+  margin-right: 4px;
+}
