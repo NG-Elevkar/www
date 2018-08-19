@@ -1,7 +1,7 @@
 var locale = "sv";
 var test;
 
-fetch("./../data/data.json")
+fetch("./data/data.json")
     .then(function(response) {
 	return response.json();
     })
