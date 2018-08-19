@@ -4,7 +4,7 @@
 	Description:
 		This is the main stylesheet.
 		It's used across all pages of the website.
-		
+
 */
 
 /* Begin unspecific Styling */
@@ -29,7 +29,7 @@ body {
 .header-text {
 	/* .header-text
 		The title that is displayed first on all pages
-		across the site.	
+		across the site.
 	*/
 	font-size: 42pt;
 	font-weight: 100;
@@ -45,7 +45,7 @@ body {
 }
 .header-container {
 	/* .header-container
-		container for the .header and the 
+		container for the .header and the
 		banner image.
 	*/
 	height: 400px;
@@ -82,7 +82,7 @@ body {
 }
 
 .navbar {
-	/* .navbar 
+	/* .navbar
 		The top-most navigation bar that contains links to all
 		the pages to the site.
 	*/
@@ -107,7 +107,7 @@ body {
 	margin-right: 4px;
 }
 .navbar-item {
-	/* .navbar-item 
+	/* .navbar-item
 		All text items in the .navbar
 	*/
 	text-align: center;
@@ -237,6 +237,6 @@ body {
 	margin-bottom: 4px;
 	border-bottom: 1px solid #000;
 }
-.calendar:first-child {
+.entry:first-child {
 	border-top: 2px solid #000;
 }
