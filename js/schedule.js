@@ -35,11 +35,6 @@ function grabCookie(cname) { //docs:grabCookie
     return false;
 }
 
-function main() { //docs:main
-
-
-    }
-}
 function main(uid) {
     if(grabCookie("json")) {
     	var cjson = JSON.parse(grabCookie("json"));
