@@ -164,7 +164,6 @@ function genSchedule(uid) {
       $("#schedule-img").attr("src", getSchedule($("#class-id").val()));
     }));
     scheduleContainer.append(scheduleSettings);
-    scheduleImgContainer.append(scheduleImg);
-    scheduleContainer.append(scheduleImgContainer);
+    scheduleContainer.append(scheduleImg);
     return scheduleContainer;
 }
