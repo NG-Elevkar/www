@@ -43,6 +43,6 @@ function getSchedule(uid) {
       var sid = 58700;
     }
     document.cookie = "json={\"uid\": \"" + uid + "\"};expires=Thu, 18 Dec 2026 12:00:00 UTC";
-    var test = document.getElementById('schedule-img');
+    var test = $('#schedule-img');
     return genSchedLink({"sc": test, "sid": sid, "uid": uid});
 }
