@@ -159,7 +159,7 @@ function genSchedule(uid) {
     var scheduleImgContainer = $("<div/>", {class: "schedule-img-container"}).on("load", function() {
       $("#schedule-img").attr("src", getSchedule($("#class-id").val()));
     });
-    var scheduleImg = $("<img/>", {id: "schedule-img"});
+    var scheduleImg = $("<img/>", {id: "schedule-img", src: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"});
 
     scheduleSettings.append($("<input/>", {type: "text", placeholder: "Class ID", id: "class-id"}).val(uid));
     scheduleSettings.append($("<input/>", {type: "submit", value: "Submit"}).on("click", function() {
