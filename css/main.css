@@ -247,3 +247,7 @@ body {
   font-weight: bold;
   margin-right: 4px;
 }
+
+.entry .date::after {
+  content: ": "
+}
