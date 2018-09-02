@@ -43,8 +43,8 @@
 			    {
 				"calendar": {
 				    "entries": [
-					{"date": "1/1", "text": {"sv": "Event 1", "en": "event1"}, "time": "00:00", "description": {"sv": "Beskrivning av Event 1", "en": "Description of event 1"},
-					{"date": "2/1", "text": {"sv": "Event 2", "en": "event2"}, "time": "12:00", "description": {"sv": "Beskrivning av Event 2", "en": "Description of event 2"}
+					{"date": "1/1", "text": {"sv": "Event 1", "en": "event1"}, "time": "00:00", "description": {"sv": "Beskrivning av Event 1", "en": "Description of event 1"}},
+					{"date": "2/1", "text": {"sv": "Event 2", "en": "event2"}, "time": "12:00", "description": {"sv": "Beskrivning av Event 2", "en": "Description of event 2"}}
 				    ]
 				}}
 					]
