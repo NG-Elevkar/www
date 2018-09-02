@@ -43,24 +43,10 @@
 			    {
 				"calendar": {
 				    "entries": [
-					{"date": "1/1", "text": {"sv": "Event 1", "en": "event1"}, "time": "00:00"},
-					{"date": "2/1", "text": {"sv": "Event 2", "en": "event2"}, "time": "12:00"}
+					{"date": "1/1", "text": {"sv": "Event 1", "en": "event1"}, "time": "00:00", "description": {"sv": "Beskrivning av Event 1", "en": "Description of event 1"},
+					{"date": "2/1", "text": {"sv": "Event 2", "en": "event2"}, "time": "12:00", "description": {"sv": "Beskrivning av Event 2", "en": "Description of event 2"}
 				    ]
-				}},
-			{"list": {
-			"title": "Årskalender",
-			"entries": [{
-				"text": "2018", "entries": [{
-					"text": "1/1", "entries": [{
-						"text": "<strong>12:00</strong>: Some random event"
-						}
-						]
-						}
-						]
-						}
-						]
-						}
-						}
+				}}
 					]
 	    },
 	    "right": {
@@ -99,7 +85,7 @@
 	    "left": {
 		"title": {
 		    "sv": "Om elevkåren",
-		    "en": "About the student body"
+		    "en": "About us"
 		},
 		"content": [
 		    {
@@ -107,7 +93,7 @@
 			    {
 				"paragraphs": [
 				    {
-					"header": {"sv": "Lorem", "en": "Lorem"}
+					"header": {"sv": "Vad vi gör", "en": "Our job"}
 				    },
 				    {
 					"text": {
@@ -132,12 +118,13 @@
 			    {
 				"list": [
 				    {
-					"header": {"sv": "Lorem", "en": "Lorem"}
+					"header": {"sv": "Vilka är vi", "en": "Who are we"}
 				    },
 				    {
 					"title": {"sv": "Dolor", "en": "Dolor"},
 					"src": "./img/people/placeholder.png",
-					"name": "Lorem Ipsum"
+					"name": "Lorem Ipsum",
+					"description": {"sv": "dolor sit amet, consectetur adipisicing elit", "en": "dolor sit amet, consectetur adipisicing elit"}
 				    },
 				    {
 					"title": {"sv": "Dolor", "en": "Dolor"},

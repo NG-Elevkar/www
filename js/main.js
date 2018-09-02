@@ -72,9 +72,9 @@ function genPageContent(json, side) {
 		    $("<span/>", {
 			class: "date"
 		    }).text(ci["calendar"]["entries"][i]["date"])
-		).append($("<span/>", {class: "text"}).text(ci["calendar"]["entries"][i]["text"][locale])).append(
+		).append($("<span/>", {class: "text"}).html(ci["calendar"]["entries"][i]["text"][locale])).append(
 		    $("<span/>", {class: "time"}).text(ci["calendar"]["entries"][i]["time"])
-		));
+		).append($("<span/>", {class: "description"}).html(ci["calendar"]["entries"][i]["description"][locale]));
 	    }
 	    elems.push(calendarRoot);
 	}
@@ -122,11 +122,6 @@ function genPageContent(json, side) {
 		    section.append(pc);
 		}
 		elems.push(section);
-	    }
-	}
-	else if ("footer" in ci) {
-	    if("objects" in ci["footer"]) {
-
 	    }
 	}
     }
