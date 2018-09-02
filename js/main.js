@@ -74,7 +74,8 @@ function genPageContent(json, side) {
 		    }).text(ci["calendar"]["entries"][i]["date"])
 		).append($("<span/>", {class: "text"}).html(ci["calendar"]["entries"][i]["text"][locale])).append(
 		    $("<span/>", {class: "time"}).text(ci["calendar"]["entries"][i]["time"])
-		).append($("<span/>", {class: "description"}).html(ci["calendar"]["entries"][i]["description"][locale]));
+		).append($("<span/>", {class: "description"}).html(ci["calendar"]["entries"][i]["description"][locale]))
+		);
 	    }
 	    elems.push(calendarRoot);
 	}
